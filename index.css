@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* light gray background */
+  }
+  
+  .logo{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+img{
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.h {
+    align-items: center ;
+    margin-left: 25%;
+}
+
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2; /* light gray background for the fieldset */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="submit"], input[type="reset"] {
+    background-color: #4CAF50; /* green background for the buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #3e8e41; /* darker green background on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  footer {
+    background-color: #333; /* dark gray background for the footer */
+    color: #fff; /* white text color */
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #444;
+  }
