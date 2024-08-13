@@ -172,33 +172,39 @@
                 <input type="checkbox" id="pks" name="ekskul[]" value="PKS">
                 <label for="pks">PKS (Patroli Keamanan Sekolah)</label><br>
                 <input type="checkbox" id="dance" name="ekskul[]" value="Dance">
-                <label for="dance">Dance</label><br>
+                <label for="dance">Riot traine</label><br>
             </fieldset>
-               <fieldset> 
-                    <legend>Upload Persyaratan</legend>
-            <label for="foto">Upload pas foto 3x4</label>
-            <input type="file" id="foto" name="foto">
-            <img id="preview" src="" alt="Preview">
-
-            <script>
-            const fotoInput = document.getElementById('foto');
-            const previewImg = document.getElementById('preview');
-
-            fotoInput.addEventListener('change', (e) => {
-                const file = e.target.files[0];
-                const reader = new FileReader();
-
-                reader.onload = (event) => {
-                previewImg.src = event.target.result;
-                };
-
-                reader.readAsDataURL(file);
-            });
-            </script><br><br> 
-                <input type="submit" value="submit">
-              </fieldset>  
+            <form>
+                <fieldset>
+                <legend><b><span>Upload persyaratan</span></b></legend>
+                    <label for="foto">Upload pas foto 3x4</label><br>
+                    <input type="file" id="foto" name="foto">
+                    <img id="preview" src="" alt="">
+        
+                    <script>
+                    const fotoInput = document.getElementById('foto');
+                    const previewImg = document.getElementById('preview');
+        
+                    fotoInput.addEventListener('change', (e) => {
+                        const file = e.target.files[0];
+                        const reader = new FileReader();
+        
+                        reader.onload = (event) => {
+                        previewImg.src = event.target.result;
+                        };
+        
+                        reader.readAsDataURL(file);
+                    });
+                    </script><br><br> 
+                    <label for="kartu">Upload Kartu tanda pelajar</label><br>
+                    <input type="file" id="kartu" name="kartu">
+                </fieldset>
             </form>
             </div>
+            <form>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </form>
             <footer>
                 <p>hak cipta Alif M.A &copy; 2024</p>
             </footer>

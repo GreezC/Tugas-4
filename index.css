@@ -78,20 +78,33 @@ img{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  input[type="submit"], input[type="reset"] {
-    background-color: #4CAF50; /* green background for the buttons */
-    color: #fff;
+  button[type="submit"] {
+    background-color: #ffffff;
+    color: #3F3F3F;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ffffff;
+  }
+  
+  button[type="reset"] {
+    background-color: #ffffff;
+    color: #3F3F3F;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
-  input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #3e8e41; /* darker green background on hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+  button[type="reset"]:hover {
+    background-color: #ffffff;
+  } 
   
   footer {
     background-color: #333; /* dark gray background for the footer */
